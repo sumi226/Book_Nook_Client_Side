@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: emerald, night;
+}
+
+/* Custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: oklch(var(--p)) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: oklch(var(--p)) !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(var(--b2));
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(var(--p));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(var(--pf));
+}
